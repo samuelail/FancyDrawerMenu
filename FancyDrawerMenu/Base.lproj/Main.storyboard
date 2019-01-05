@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,97 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FancyDrawerMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="mhy-gv-mTY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wHsF_RqT_400x400" translatesAutoresizingMaskIntoConstraints="NO" id="Phz-r1-Gus">
+                                <rect key="frame" x="89" y="43" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uQ-sO-uy9">
+                                <rect key="frame" x="55" y="177" width="219" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <state key="normal" title="First View">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usf-m6-Zjg">
+                                <rect key="frame" x="55" y="242" width="219" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <state key="normal" title="Second View">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgY-2t-n80">
+                                <rect key="frame" x="55" y="307" width="219" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <state key="normal" title="Third View">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RrO-1O-m0X">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eT-Xg-U2W">
+                                        <rect key="frame" x="16" y="18" width="33" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="33" id="Ea9-zi-F82"/>
+                                            <constraint firstAttribute="height" constant="51" id="ht8-rg-hW3"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="menu">
+                                            <color key="titleColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mFs-yH-dRI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5eT-Xg-U2W" firstAttribute="top" secondItem="RrO-1O-m0X" secondAttribute="top" constant="18" id="ke2-Af-SwA"/>
+                                    <constraint firstItem="5eT-Xg-U2W" firstAttribute="leading" secondItem="RrO-1O-m0X" secondAttribute="leading" constant="16" id="ln4-9y-kiP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RrO-1O-m0X" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1RM-bX-tCk"/>
+                            <constraint firstItem="mhy-gv-mTY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4BA-Kb-qoI"/>
+                            <constraint firstItem="RrO-1O-m0X" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Dux-A6-sda"/>
+                            <constraint firstItem="mhy-gv-mTY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N3C-po-wTw"/>
+                            <constraint firstItem="RrO-1O-m0X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rgu-Ou-Vsc"/>
+                            <constraint firstItem="mhy-gv-mTY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZGd-c2-7A9"/>
+                            <constraint firstItem="RrO-1O-m0X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kv4-kn-S4Y"/>
+                            <constraint firstItem="mhy-gv-mTY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ury-sp-E5a"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mainView" destination="RrO-1O-m0X" id="RuZ-LA-faQ"/>
+                        <outlet property="userImg" destination="Phz-r1-Gus" id="JwV-dB-qS8"/>
+                        <outlet property="viewBottom" destination="1RM-bX-tCk" id="RC5-Ld-7iu"/>
+                        <outlet property="viewLeading" destination="Rgu-Ou-Vsc" id="Vef-5B-LtP"/>
+                        <outlet property="viewTop" destination="kv4-kn-S4Y" id="nFd-eF-7aT"/>
+                        <outlet property="viewTrailing" destination="Dux-A6-sda" id="p3b-Og-qOb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gradient" width="2880" height="1800"/>
+        <image name="menu" width="200" height="200"/>
+        <image name="wHsF_RqT_400x400" width="400" height="400"/>
+    </resources>
 </document>
